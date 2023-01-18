@@ -37,9 +37,9 @@ public class ServletJuego extends HttpServlet {
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<h1>Ejercicio 1</h1>");
-			out.println("<table border=\"solid 1px\"><tr>");
+			out.println("<table border='1' style=\'border-collapse: collapse\'><tr>");
 			for(int i=0;i<palabra.length();i++) {
-				out.println("<td margin=\"2px\" padding=\"2px\" text-align=\"centre\"><a href=\"ServletComprobar?palabra=\""+palabra+">ver</a></td>");
+				out.println("<td style=\' width:40px; padding: 2px; text-align: center;\'><a href=\"ServletComprobar?palabra=\""+palabra+">ver</a></td>");
 			}
 			out.println("</tr></table>");
 		}
